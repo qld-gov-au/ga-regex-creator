@@ -1,1 +1,76 @@
-<!DOCTYPE html><html>	<head>	    <meta charset="utf-8">	    <meta http-equiv="x-ua-compatible" content="ie=edge">	    <title>Google analytics URL regexer</title>	    <link rel="stylesheet" href="page.css">	</head>	<body>	<div>	    <div class="head-area">	        <h1>GAP Portal: Regexer</h1>	        <h2>Regexer - part of the Qld Government~ Google Analytics Premium resources portal</h2>	    </div>	    <div class="intro">	            <br/><br/>	            Regexer - this tool helps you turn a URL into a regular expression (regex). Regex's are useful for creating	            filters based on specific pages or goal funnels for example.	            <br/>Questions? Please email:	            <script language=Javascript type=text/javascript>	                <!--	                document.write('<a href="mai');	                document.write('lto');	                document.write(':&#119;&#101;&#98;&#97;&#110;&#97;&#108;&#121;&#116;&#105;&#99;&#115;');	                document.write('@');	                document.write('&#100;&#115;&#105;&#116;&#105;&#46;&#113;&#108;&#100;&#46;&#103;&#111;&#118;&#46;&#97;&#117;">');	                document.write('&#119;&#101;&#98;&#97;&#110;&#97;&#108;&#121;&#116;&#105;&#99;&#115;');	                document.write('@');	                document.write('&#100;&#115;&#105;&#116;&#105;&#46;&#113;&#108;&#100;&#46;&#103;&#111;&#118;&#46;&#97;&#117;<\/a>');	                // -->	            </script>	        <noscript>&#119;&#101;&#98;&#97;&#110;&#97;&#108;&#121;&#116;&#105;&#99;&#115; at &#100;&#115;&#105;&#116;&#105;	            dot &#113;&#108;&#100; dot &#103;&#111;&#118; dot &#97;&#117;</noscript>	    </div>	    <div class="tile-section">	        <label for="url"><b>URL:</b></label>	        <input type="url" id="url" size="255" autofocus>	        <br/><br/>	        <label for="regexp"><b>Regular expression:</b></label>	        <input id="regexp" size="255" readonly>	    </div>	</div>	<div class="content">	    <h2>Tips and examples</h2>	    <dl>	        <dt>\</dt>	        <dd>Escapes a special character—<kbd class="recommended">www\.qld\.gov\.au\/</kbd> matches	            <kbd>www.qld.gov.au/</kbd></dd>	        <dt>.</dt>	        <dd>Matches any letter, number or symbol—<kbd class="not-recommended">www.qld.gov.au</kbd> matches <kbd>www*qld*gov*au</kbd>	        </dd>	        <dt>.+</dt>	        <dd>Matches <em>one or more</em> letters, numbers or symbols</dd>	        <dt>.*</dt>	        <dd>Matches <em>zero or more</em> letters, numbers or symbols</dd>	        <dt>s?</dt>	        <dd>Matches an optional <kbd>s</kbd>—<kbd class="recommended">https?</kbd> matches <kbd>http</kbd> and <kbd>https</kbd>	        </dd>	    </dl>	</div>	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>	<script src="page.js"></script>	</body></html>
+
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <title>Google analytics URL regexer</title>
+	    <link rel="stylesheet" href="page.css">
+	</head>
+	<body>
+	<div>
+	    <div class="head-area">
+	        <h1>GAP Portal: Regexer</h1>
+	        <h2>Regexer - part of the Qld Government~ Google Analytics Premium resources portal</h2>
+	    </div>
+
+	    <div class="intro">
+	            <br/><br/>
+	            Regexer - this tool helps you turn a URL into a regular expression (regex). Regex's are useful for creating
+	            filters based on specific pages or goal funnels for example.
+	            <br/>Questions? Please email:
+
+	            <script language=Javascript type=text/javascript>
+	                <!--
+	                document.write('<a href="mai');
+	                document.write('lto');
+	                document.write(':&#111;&#110;&#108;&#105;&#110;&#101;');
+	                document.write('@');
+	                document.write('&#113;&#108;&#100;&#46;&#103;&#111;&#118;&#46;&#97;&#117;">');
+	                document.write(':&#111;&#110;&#108;&#105;&#110;&#101;');
+	                document.write('@');
+	                document.write('&#113;&#108;&#100;&#46;&#103;&#111;&#118;&#46;&#97;&#117;<\/a>');
+	                // -->
+	            </script>
+	        <noscript>&#119;&#101;&#98;&#97;&#110;&#97;&#108;&#121;&#116;&#105;&#99;&#115; at &#100;&#115;&#105;&#116;&#105;
+	            dot &#113;&#108;&#100; dot &#103;&#111;&#118; dot &#97;&#117;</noscript>
+
+	    </div>
+
+	    <div class="tile-section">
+	        <label for="url"><b>URL:</b></label>
+	        <input type="url" id="url" size="255" autofocus>
+	        <br/><br/>
+	        <label for="regexp"><b>Regular expression:</b></label>
+	        <input id="regexp" size="255" readonly>
+	    </div>
+	</div>
+
+	<div class="content">
+	    <h2>Tips and examples</h2>
+	    <dl>
+	        <dt>\</dt>
+	        <dd>Escapes a special character—<kbd class="recommended">www\.qld\.gov\.au\/</kbd> matches
+	            <kbd>www.qld.gov.au/</kbd></dd>
+
+	        <dt>.</dt>
+	        <dd>Matches any letter, number or symbol—<kbd class="not-recommended">www.qld.gov.au</kbd> matches <kbd>www*qld*gov*au</kbd>
+	        </dd>
+
+	        <dt>.+</dt>
+	        <dd>Matches <em>one or more</em> letters, numbers or symbols</dd>
+
+	        <dt>.*</dt>
+	        <dd>Matches <em>zero or more</em> letters, numbers or symbols</dd>
+
+	        <dt>s?</dt>
+	        <dd>Matches an optional <kbd>s</kbd>—<kbd class="recommended">https?</kbd> matches <kbd>http</kbd> and <kbd>https</kbd>
+	        </dd>
+
+	    </dl>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="page.js"></script>
+	</body>
+</html>
